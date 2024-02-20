@@ -1,0 +1,109 @@
+*{
+    text-decoration: none;
+}
+body {
+  display: flex;
+  background-color: white;
+}
+header{
+    height: 40px;/*高さ指定*/
+    width:110%;/*横幅指定*/
+    top: 0px;
+    left: -10px;
+    background:#a2d9e7;
+    color:#3e3a39;
+    text-align: center;
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    padding: 20px;
+    z-index: 500;
+    border-bottom: 2px solid #3e3a39;
+}
+.title{
+    background-color: #a2d9e7;
+    text-align: center;
+    position: fixed;
+    color: #3e3a39;
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 0px;
+    margin-left: 30px;
+}
+nav{
+    background-color: #a2d9e7;
+    margin-left: 650px;
+    z-index: 600;
+}   
+nav ul{
+    background-color: #a2d9e7;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+nav ul li{
+    background-color: #a2d9e7;
+}
+nav ul li a{
+    background-color: #a2d9e7;
+    display: block;
+    text-decoration: none;
+    color: #3e3a39;
+    margin: -5px 40px 0px 40px;
+    padding: 10ox 10px;
+    font-weight: bold;
+}
+.sideNavi{
+  position: relative;
+  height: 110vh;
+  width: 200px;
+  background-color: #a2d9e7;
+  overflow-x: hidden;
+  border-right: 2px solid #3e3a39;
+  margin-left: -10px;
+  margin-top: -25px;
+}
+.sideNavi ul {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-top: 20px;
+  padding-left: 10px;
+  margin-left:-10px;
+}
+.sideNavi ul li {
+  list-style: none;
+  display: block;
+  position: relative;
+  width: 100%;
+  border-radius: 3px;
+  border-right: 2px solid #3e3a39;
+  border-bottom: 2px solid #3e3a39;
+}
+.sideNavi ul li a {
+  display: block;
+  position: relative;
+  text-decoration: none;
+  color: #3e3a39;
+  width: 100%;
+  display: flex;
+  font-weight: bold;
+}
+.sideNavi ul li a .icon {
+  display: block;
+  min-width: 45px;
+  height: 60px;
+  line-height: 70px;
+  text-align: center;
+  margin-left: 10px;
+}
+.sideNavi ul li a .icon ion-icon {
+  font-size: 1.5em;
+}
+.sideNavi ul li a .item {
+  height: 60px;
+  line-height: 60px;
+  white-space: nowrap;
+  margin-left: 0px;
+}

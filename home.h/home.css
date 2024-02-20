@@ -1,0 +1,120 @@
+*{
+    background-color: white;
+    text-decoration: none;
+}
+header{
+    height: 40px;
+    width:110%;
+    top: 0px;
+    left: -10px;
+    background:#a2d9e7;
+    color:#3e3a39;
+    text-align: center;
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    padding: 20px;
+    z-index: 500;
+    border-bottom: 2px solid #3e3a39;
+}
+.title{
+    background-color: #a2d9e7;
+    text-align: center;
+    position: fixed;
+    color: #3e3a39;
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 0px;
+    margin-left: 30px;
+}
+nav{
+    background-color: #a2d9e7;
+    margin-left: 650px;
+    z-index: 600;
+}   
+nav ul{
+    background-color: #a2d9e7;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+nav ul li{
+    background-color: #a2d9e7;
+}
+nav ul li a{
+    background-color: #a2d9e7;
+    display: block;
+    text-decoration: none;
+    color: #3e3a39;
+    margin: -5px 40px 0px 40px;
+    padding: 10ox 10px;
+    font-weight: bold;
+}
+.blank{
+    height: 20px;
+    padding: 30px 0px;
+    margin-top: -10px;
+}
+.container {
+    width: 100%;
+    height: 250px;
+    margin-top: 80px;
+    position: relative;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+} 
+.clock {
+    font-family: 'Share Tech Mono', monospace;
+    color: #3e3a39;
+    line-height: 1.2;
+    text-align: center;
+}
+.clock p{
+    height: 60px;
+}
+.clockDate {
+    font-size: 35px;
+    margin-bottom: 0px;
+}
+.clockTime {
+    height: 20%;
+    font-size: 90px;
+    margin-top: 10px;
+    padding: 0px 30px -100px 30px;
+}  
+.btn-on{
+    width: 180px;
+    height: 120px;
+    margin: 0px 40px;
+    border: 1px solid #9ba3a0;
+    border-radius: 5px; 
+    color: white;
+    font-size: 23px;
+    background-color: mediumspringgreen
+}
+.btn-off{
+    width: 180px;
+    height: 120px;
+    margin: 0px 40px;
+    border: 1px solid #9ba3a0;
+    border-radius: 5px; 
+    color: white;
+    font-size: 23px;
+    background-color: #9b9b9b;
+}  
+.btn a{
+    font-family: sans-serif;
+}
+.btnArea{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 0px;
+}
+.testUser{
+    text-align: right;
+    margin-right: 20px;
+}

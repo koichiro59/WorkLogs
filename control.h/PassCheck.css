@@ -1,0 +1,108 @@
+*{
+    background-color: white;
+    text-decoration: none;
+}
+header{
+  height: 40px;/*高さ指定*/
+  width:110%;/*横幅指定*/
+  top: 0px;
+  left: -10px;
+  background:#a2d9e7;
+  color:#3e3a39;
+  text-align: center;
+  display: flex;
+  position: fixed;
+  justify-content: space-between;
+  padding: 20px;
+  z-index: 500;
+  border-bottom: 2px solid #3e3a39;
+}
+.title{
+  background-color: #a2d9e7;
+  text-align: center;
+  position: fixed;
+  color: #3e3a39;
+  font-size: 22px;
+  font-weight: bold;
+  margin-top: 0px;
+  margin-left: 30px;
+}
+nav{
+  background-color: #a2d9e7;
+  margin-left: 650px;
+  z-index: 600;
+}   
+nav ul{
+  background-color: #a2d9e7;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+nav ul li{
+  background-color: #a2d9e7;
+}
+nav ul li a{
+  background-color: #a2d9e7;
+  display: block;
+  text-decoration: none;
+  color: #3e3a39;
+  margin: -5px 40px 0px 40px;
+  padding: 10ox 10px;
+  font-weight: bold;
+}
+.blank{
+  height: 20px;
+  padding: 30px 0px;
+  margin-top: -10px;
+}
+.loginForm{
+  position: relative;
+  width: 400px;
+  height: 60%;
+  margin: 30px auto 10px auto;
+  padding: 0 20px;
+  border: 1px solid #3e3a39;
+}
+form p{
+  font-size: 14px;
+  padding: 0 5px;
+  margin-top: 10px;
+}
+.password {
+  margin-bottom: 20px;
+}
+input[type="password"] {
+  width: 300px;
+  padding: 5px 10px;
+  font-size: 14px;
+}
+.login{
+  text-align: right;
+  padding: 30px 20px 0px 20px;
+  margin-top: 30px;
+}
+.loginForm p{
+  color: #3e3a39;
+  font-weight: bold;
+}
+.loginForm .formTitle {
+  text-align: center;
+  font-family: Arial;
+  font-size: 30px;
+  color: #3e3a39;
+  padding-bottom: 6px;
+  border-bottom: 2px solid #3e3a39;
+  margin-bottom: 20px;
+}
+.loginBtn{
+  font-family: sans-serif;
+  color: #3e3a39;
+  font-size: 18px;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 7px;
+  border: solid #3e3a39 2px;
+}
+.commnet{
+  text-align: center;
+}
