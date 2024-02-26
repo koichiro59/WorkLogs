@@ -38,7 +38,7 @@
 
     function db_connect(){
         try {
-            $pdo = new PDO('mysql:dbname=worklogs;host=localhost', 'root', '');
+            $pdo = new PDO('mysql:dbname=heroku_c5d24901779e6ce;host=us-cluster-east-01.k8s.cleardb.net', 'b8082d77592abd', '1d51050e');
             $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         } catch (PDOException $e) {
             $error_message[] = $e->getMessage();
