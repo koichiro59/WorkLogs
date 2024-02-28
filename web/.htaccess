@@ -1,5 +1,3 @@
 RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^ index.php [QSA,L]
-
-DirectoryIndex ./home.h/home.php
+RewriteRule ^ ./home.h/home.php [QSA,L]
