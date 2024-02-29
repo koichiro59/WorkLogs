@@ -21,9 +21,8 @@
         $_SESSION['apply']++;
     }
     if ($_SERVER["REQUEST_METHOD"] == "POST"&&isset($_POST["applyBtn"])) {
-        $redirect_url = "http://localhost/work_php/home.h";
-        header("Location: " . $redirect_url);
-        exit; 
+        header('Location: ' . '../home.h/home.php', true , 301); 
+        exit(); 
     }
 	
 	$pdo=null;

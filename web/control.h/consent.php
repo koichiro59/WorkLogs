@@ -1,24 +1,24 @@
 <?php
     include("../common.h/common.php");
 
-    $_SESSION['displayDate']=$currentTime;
-
-    $pdo=null;
-    $pdo=dB_connect();
-    $sql_date_select = "SELECT * FROM `worker_1` WHERE date = '{$_SESSION['displayDate']}'";
-    $scheduleArray = $pdo->query($sql_date_select);
-    
-    if (isset($_POST['consentBtn'])) {
-        $_SESSION['apply']--;
-        $sql_consent = "UPDATE worker_1 SET
-            start_at = :start_at, end_at = :end_at, break_time = :break_time, 
-            total_time = :total_time, over_time = :over_time WHERE date = '{$_SESSION['displayDate']}'";
-        $stmt_consent = $pdo->prepare($sql_consent);
-        $params_correct_date = array(':start_at' => $_SESSION['correctStart'], ':end_at' => $_SESSION['correctEnd'],
-        ':break_time' =>  $_SESSION['correctBreak'], ':total_time' =>  $_SESSION['correctTotal'],':over_time' => $_SESSION['correctOver']);
-        $stmt_consent->execute($params_correct_date);
+    if(isset($_SESSION['displayDate'])){
+        $pdo=null;
+        $pdo=dB_connect();
+        $sql_date_select = "SELECT * FROM `worker_1` WHERE date = '{$_SESSION['displayDate']}'";
+        $scheduleArray = $pdo->query($sql_date_select);
+        
+        if (isset($_POST['consentBtn'])) {
+            $_SESSION['apply']--;
+            $sql_consent = "UPDATE worker_1 SET
+                start_at = :start_at, end_at = :end_at, break_time = :break_time, 
+                total_time = :total_time, over_time = :over_time WHERE date = '{$_SESSION['displayDate']}'";
+            $stmt_consent = $pdo->prepare($sql_consent);
+            $params_correct_date = array(':start_at' => $_SESSION['correctStart'], ':end_at' => $_SESSION['correctEnd'],
+            ':break_time' =>  $_SESSION['correctBreak'], ':total_time' =>  $_SESSION['correctTotal'],':over_time' => $_SESSION['correctOver']);
+            $stmt_consent->execute($params_correct_date);
+        }    
     }
-
+    
     $pdo=null;
 ?>
 
