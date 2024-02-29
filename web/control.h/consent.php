@@ -1,10 +1,10 @@
 <?php
-	include("https://worklogs-ed10984f34c2.herokuapp.com/common.h/common.php");
+    include("../common.h/common.php");
 
     $pdo=null;
-	$pdo=dB_connect();
+    $pdo=dB_connect();
     $sql_date_select = "SELECT * FROM `worker_1` WHERE date = '{$_SESSION['displayDate']}'";
-	$scheduleArray = $pdo->query($sql_date_select);
+    $scheduleArray = $pdo->query($sql_date_select);
     
     if (isset($_POST['consentBtn'])) {
         $_SESSION['apply']--;
