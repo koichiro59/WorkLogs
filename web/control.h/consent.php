@@ -49,7 +49,15 @@
         </nav>
     </header>
     <div class="blank">&nbsp;</div>
-    <h2><?php echo "修正依頼が".$_SESSION['apply']."件あります" ?></h2>
+    <h2>
+        <?php 
+            if(isset($_SESSION['apply'])){
+                echo "修正依頼が0件あります" 
+            }else{
+                echo "修正依頼が".$_SESSION['apply']."件あります" 
+            }
+        ?>
+    </h2>
     <div>
         <table class="oldTable">
                 <tr>
