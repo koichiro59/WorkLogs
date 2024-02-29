@@ -1,5 +1,5 @@
 <?php
-    include("../common.h/common.php");
+    include("./common.h/common.php");
 
     $pdo=null;
     $pdo=dB_connect();
