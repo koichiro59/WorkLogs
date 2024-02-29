@@ -1,6 +1,8 @@
 <?php
     include("../common.h/common.php");
 
+    $_SESSION['displayDate']=$currentTime;
+
     $pdo=null;
     $pdo=dB_connect();
     $sql_date_select = "SELECT * FROM `worker_1` WHERE date = '{$_SESSION['displayDate']}'";
