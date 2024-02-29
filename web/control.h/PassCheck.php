@@ -5,8 +5,7 @@
         $input_value = $_POST["password"];
         if (!empty($input_value)) {
             if ($input_value == "12345678") {
-                $redirect_url = "https://worklogs-ed10984f34c2.herokuapp.com/control.h/contol.php";
-                header("Location: " . $redirect_url);
+                header('Location: ' . 'control.php', true , 301); 
                 exit; 
             }else {
                 echo "<script>alert('パスワードが間違っています');</script>";
