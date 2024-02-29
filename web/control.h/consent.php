@@ -52,9 +52,9 @@
     <h2>
         <?php 
             if(isset($_SESSION['apply'])){
-                echo "修正依頼が0件あります" 
+                echo "修正依頼が0件あります";
             }else{
-                echo "修正依頼が".$_SESSION['apply']."件あります" 
+                echo "修正依頼が".$_SESSION['apply']."件あります" ;
             }
         ?>
     </h2>
