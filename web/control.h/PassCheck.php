@@ -6,7 +6,7 @@
         if (!empty($input_value)) {
             if ($input_value == "12345678") {
                 header('Location: ' . 'control.php', true , 301); 
-                exit; 
+                exit(); 
             }else {
                 echo "<script>alert('パスワードが間違っています');</script>";
             }
