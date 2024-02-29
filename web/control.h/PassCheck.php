@@ -5,7 +5,7 @@
         $input_value = $_POST["password"];
         if (!empty($input_value)) {
             if ($input_value == "12345678") {
-                $redirect_url = "http://localhost/work_php/control.h/control.php";
+                $redirect_url = "https://worklogs-ed10984f34c2.herokuapp.com/control.h/contol.php";
                 header("Location: " . $redirect_url);
                 exit; 
             }else {
