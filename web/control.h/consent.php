@@ -1,5 +1,5 @@
 <?php
-	include("../common.h/common.php");
+	include("https://worklogs-ed10984f34c2.herokuapp.com/common.h/common.php");
 
     $pdo=null;
 	$pdo=dB_connect();
