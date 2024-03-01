@@ -51,7 +51,7 @@
     <div class="blank">&nbsp;</div>
     <h2>
         <?php 
-            if(isset($_SESSION['apply'])){
+            if($_SESSION['apply']==null){
                 echo "修正依頼が0件あります";
             }else{
                 echo "修正依頼が".$_SESSION['apply']."件あります" ;
